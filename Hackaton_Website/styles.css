@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+body {
+    padding: 20px;
+    margin: 0;
+    font-family: Orelega One, sans-serif;
+    background-color: #fffaf0;
+    color: black;
+    background-image: url(Images/pexels-polina-tankilevitch-4110476.jpg);
+}
+
+.navbar {
+   display: flex;
+   flex-direction: row-reverse;   
+}
+
+.navbar a {
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+.navbar a:hover {
+    color: rgba(52, 11, 235, 0.76)
+}
+
+ul {
+   list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.grid-parent { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.main_content, .sidebar {
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.main_content {
+
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(3,1,13,0.8211659663865546) 47%, rgba(252,176,69,1) 100%);
+}
+
+.sidebar {
+    bbackground: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(3,1,13,0.8211659663865546) 47%, rgba(252,176,69,1) 100%);
+      
+grid-column: 3 / -1;
+grid-row: 2/3;
+
+}
+
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 3 / -1
+}
+
